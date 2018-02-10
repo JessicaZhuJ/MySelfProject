@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- commom standard -->
+    <!-- 主色文字 -->
+    <color name="red">#d61c1c</color>
+    <!-- 线条 -->
+    <color name="common_border_line">#e5e5e5</color>
+    <!-- 主文字 字体颜色 -->
+    <color name="main_textSize_black">#000000</color>
+    <!-- 次文字 字体颜色 -->
+    <color name="minor_textSize_gray">#a5a5a5</color>
+    <!-- 背景 -->
+    <color name="common_bg_gray">#f2f2f2</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+</resources>

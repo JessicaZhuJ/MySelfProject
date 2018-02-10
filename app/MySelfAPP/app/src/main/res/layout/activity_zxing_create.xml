@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.myself.app.viewModel.ZXingQRCodeCreateViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_qr_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/widget_size_200"
+            android:layout_margin="@dimen/widget_size_6"
+            android:hint="请输入要生成二维码的内容"/>
+
+        <Button
+            android:id="@+id/btn_qr_create"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成二维码带图标"
+            android:onClick="@{viewModel::onClick}"/>
+        <Button
+            android:id="@+id/btn_qr_create_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="生成二维码不带图标"
+            android:onClick="@{viewModel::onClick}"/>
+        <ImageView
+            android:id="@+id/iv_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="qr_code"/>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,10 @@
+.gradle/
+.idea/
+**/build/
+dahua_app_300/.externalNativeBuild/
+dahua_app_310/.externalNativeBuild/
+hik_app/.externalNativeBuild/
+local.properties
+dahua_app_300/release/
+dahua_app_310/release/
+update_tools/release/

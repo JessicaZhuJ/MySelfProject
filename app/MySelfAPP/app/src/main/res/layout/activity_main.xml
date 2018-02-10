@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.myself.app.viewModel.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.wefika.calendar.CollapseCalendarView
+            android:id="@+id/calendar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.myself.app.view.MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{viewModel.tvText}" />
+
+                <Button
+                    android:id="@+id/main_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_14"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="http测试"
+                    android:textSize="@dimen/font_size_15" />
+
+                <Button
+                    android:id="@+id/dialog_show_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_18"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Dialog"
+                    android:textSize="@dimen/font_size_18" />
+
+                <Button
+                    android:id="@+id/fresco_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Fresco"
+                    android:textSize="@dimen/font_size_18" />
+
+                <Button
+                    android:id="@+id/zxing_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Zxing"
+                    android:textSize="@dimen/font_size_20" />
+
+                <Button
+                    android:id="@+id/zxing_create_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="二维生成"
+                    android:textSize="@dimen/font_size_20" />
+
+                <Button
+                    android:id="@+id/pull_to_refresh_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="下拉刷新"
+                    android:textSize="@dimen/font_size_20" />
+
+                <Button
+                    android:id="@+id/listView_menu_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="listView侧滑菜单"
+                    android:textSize="@dimen/font_size_20" />
+                <Button
+                    android:id="@+id/custom_refresh_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Custom refresh View"
+                    android:textSize="@dimen/font_size_20" />
+
+                <Button
+                    android:id="@+id/recycler_view_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Recycler View"
+                    android:textSize="@dimen/font_size_20" />
+
+                <Button
+                    android:id="@+id/config_change_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="Config Change"
+                    android:textSize="@dimen/font_size_20" />
+                <Button
+                    android:id="@+id/raw_load"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/widget_size_60"
+                    android:layout_margin="@dimen/widget_size_6"
+                    android:onClick="@{viewModel::onClick}"
+                    android:text="RAW_LOAD"
+                    android:textSize="@dimen/font_size_20" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
